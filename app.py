@@ -117,7 +117,7 @@ if uploaded_file is not None:
                     qa_prompt = f"You are a professional QA and Call Analytics Assistant. Tasks: 1. Correct grammar 2. Correct spelling 3. Improve readability 4. Create a detailed summary.\n\nTranscript:\n{english_transcript}"
                     
                     qa_response = ai.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-1.5-flash",
                         contents=qa_prompt
                     )
                     summary = qa_response.text
@@ -127,7 +127,7 @@ if uploaded_file is not None:
                     nba_prompt = f"You are a Contact Center Expert.\n\nTranscript:\n{english_transcript}\n\nSummary:\n{summary}\n\nGenerate a single raw valid JSON object with: 1. customer_intent 2. sentiment 3. root_cause 4. next_best_actions (list) 5. follow_up_required. Return raw JSON text only, without formatting wrappers."
                     
                     nba_response = ai.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-1.5-flash",
                         contents=nba_prompt
                     )
                     
