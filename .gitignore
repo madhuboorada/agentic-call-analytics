@@ -1,0 +1,14 @@
+# Virtual environment folder
+call_trans/
+.venv/
+
+# Environment files containing private keys
+.env
+
+# Raw media files
+*.wav
+*.mp3
+*.m4a
+
+# Operating system artifacts
+.DS_Storei

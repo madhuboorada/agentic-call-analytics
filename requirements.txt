@@ -1,4 +1,4 @@
-sarvamai
-google-generativeai
-python-dotenv
 streamlit
+sarvamai
+google-genai
+python-dotenv
