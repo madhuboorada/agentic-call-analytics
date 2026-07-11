@@ -1,0 +1,4 @@
+sarvamai
+google-generativeai
+python-dotenv
+streamlit
